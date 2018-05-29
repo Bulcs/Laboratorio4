@@ -1,0 +1,78 @@
+\hypertarget{main_8cpp}{}\section{main.\+cpp File Reference}
+\label{main_8cpp}\index{main.\+cpp@{main.\+cpp}}
+
+
+criaçao de um programa para detectar se a frase é palíndroma ou não  
+
+
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include \char`\"{}pilha.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$iterator$>$}\newline
+{\ttfamily \#include $<$algorithm$>$}\newline
+{\ttfamily \#include $<$cctype$>$}\newline
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{main_8cpp_abf9e6b7e6f15df4b525a2e7705ba3089}{main}} (int argc, char const $\ast$argv\mbox{[}$\,$\mbox{]})
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+criaçao de um programa para detectar se a frase é palíndroma ou não 
+
+\begin{DoxyAuthor}{Author}
+Vinícius Ribeiro Bulcão 
+\end{DoxyAuthor}
+\begin{DoxySince}{Since}
+27/05/2018 
+\end{DoxySince}
+\begin{DoxyDate}{Date}
+28/05/2018 
+\end{DoxyDate}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{main_8cpp_abf9e6b7e6f15df4b525a2e7705ba3089}\label{main_8cpp_abf9e6b7e6f15df4b525a2e7705ba3089}} 
+\index{main.\+cpp@{main.\+cpp}!main@{main}}
+\index{main@{main}!main.\+cpp@{main.\+cpp}}
+\subsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char const $\ast$}]{argv\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+criação de 3 strings 
+\begin{DoxyParams}{Parameters}
+{\em letra} & cada letra da frase \\
+\hline
+{\em norm\+\_\+frase} & a frase em um vetor \\
+\hline
+{\em rev\+\_\+frase} & a frase ao contrário em um vetor\\
+\hline
+\end{DoxyParams}
+criação de 4 praâmetros inteiros 
+\begin{DoxyParams}{Parameters}
+{\em aux\+\_\+rev} & é o inteiro auxilar da frase reversa \\
+\hline
+{\em aux\+\_\+norm} & é o inteiro auxiliar da frase normal \\
+\hline
+{\em i} & é simplesmente um controle\\
+\hline
+\end{DoxyParams}
+cria uma \mbox{\hyperlink{class_pilha}{Pilha}} pilha recebendo strings
+
+laço para acabar com a leitura da frase
+
+sempre dando um pilha.\+push() em cada letra
+
+retirando o \textquotesingle{}\&\textquotesingle{} digitado com pilha.\+pop()
+
+criação de um laço
+
+O laço serve para saber a hora de parar com a inversão da frase e implementação pro minúsculo, sempre dando um pilha.\+pop() para não ficar em loop infinito
+
+utilização do reverse para reverter a frase
+
+reverse tem seu começo em begin pilha.\+top(), pois pretende-\/se o contrario
+
+criação de um contador para dar cout em na frase normal
+
+criação de um laço, caso a norm\+\_\+frase seja igual a rev\+\_\+frase, imprimir que são palíndromas
