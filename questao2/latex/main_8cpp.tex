@@ -1,0 +1,119 @@
+\hypertarget{main_8cpp}{}\section{main.\+cpp File Reference}
+\label{main_8cpp}\index{main.\+cpp@{main.\+cpp}}
+
+
+criaçao de um programa para resolver uma notação Polonesa inversa  
+
+
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include \char`\"{}pilha.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include \char`\"{}math.\+h\char`\"{}}\newline
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{main_8cpp_a65af102e314743c3d0da53fa68773abb}\label{main_8cpp_a65af102e314743c3d0da53fa68773abb}} 
+int {\bfseries para\+Inteiro} (string contas)
+\item 
+int \mbox{\hyperlink{main_8cpp_abf9e6b7e6f15df4b525a2e7705ba3089}{main}} (int argc, char const $\ast$argv\mbox{[}$\,$\mbox{]})
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+criaçao de um programa para resolver uma notação Polonesa inversa 
+
+\begin{DoxyAuthor}{Author}
+Vinícius Ribeiro Bulcão 
+\end{DoxyAuthor}
+\begin{DoxySince}{Since}
+20/05/2018 
+\end{DoxySince}
+\begin{DoxyDate}{Date}
+28/05/2018 
+\end{DoxyDate}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{main_8cpp_abf9e6b7e6f15df4b525a2e7705ba3089}\label{main_8cpp_abf9e6b7e6f15df4b525a2e7705ba3089}} 
+\index{main.\+cpp@{main.\+cpp}!main@{main}}
+\index{main@{main}!main.\+cpp@{main.\+cpp}}
+\subsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char const $\ast$}]{argv\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+criação de 3 strings 
+\begin{DoxyParams}{Parameters}
+{\em operacao} & contará as operações como (+ -\/ $\ast$ /) \\
+\hline
+{\em contas} & terá o numero de contas feitas \\
+\hline
+{\em numeros} & tem numeros tidos na notação Polonesa\\
+\hline
+\end{DoxyParams}
+criação de 3 int 
+\begin{DoxyParams}{Parameters}
+{\em j} & serve para auxiliar no programa \\
+\hline
+{\em aux} & serve para auxiliar no programa \\
+\hline
+{\em i} & serve para controle \\
+\hline
+{\em tamanho} & para receber o pilha.\+size() para ajudar no programa\\
+\hline
+\end{DoxyParams}
+cria uma \mbox{\hyperlink{class_pilha}{Pilha}} pilha recebendo strings
+
+laço para acabar com a leitura da notação
+
+sempre dando um pilha.\+push() em cada numero ou operador
+
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+while(!pilha.empty())\{ cout $<$$<$ pilha.\+top()$<$$<$ endl; pilha.\+pop(); \} ~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+cout $<$$<$ endl; \}
+
+é criado um laço para organizar a pilha para que possa realizar as contas
+
+criação de uma condicional para os 3 primeiros elementos, pois eles sao diferentes do resto da notação
+
+caso operador for igual \textquotesingle{}+\textquotesingle{} somar os numeros
+
+criação de uma condicional para os 3 primeiros elementos, pois eles sao diferentes do resto da notação
+
+caso operador for igual \textquotesingle{}+\textquotesingle{} somar os numeros
+
+criação de uma condicional para os 3 primeiros elementos, pois eles sao diferentes do resto da notação
+
+caso operador for igual \textquotesingle{}+\textquotesingle{} somar os numeros
+
+criação de uma condicional para os 3 primeiros elementos, pois eles sao diferentes do resto da notação
+
+caso operador for igual \textquotesingle{}+\textquotesingle{} somar os numeros
+
+contador recebe tamanho-\/4 pois precisa diminuir da memória ja utilizada anteriormente 
+\begin{DoxyParams}{Parameters}
+{\em contador} & \\
+\hline
+\end{DoxyParams}
+contador2 serve para ter controle do laço seguinte 
+\begin{DoxyParams}{Parameters}
+{\em contador2} & \\
+\hline
+\end{DoxyParams}
+criação de um laço para realizar as contas da notação polonesa
+
+com condicionais para os operadores (+ -\/ $\ast$ /)
